@@ -13,7 +13,8 @@ int main () {
     struct produto listaProdutos[5];
 
     int i;
-    float total;
+    float total = 0;
+
     for (i = 0; i < 5; ++i) {
         listaProdutos[i].nome = malloc(50);
 
@@ -32,7 +33,7 @@ int main () {
     }
 
     for (i = 0; i < 5; ++i) {
-        printf("%s - %d - %.2f", listaProdutos[i].nome,
+        printf("%s - %d - %.2f \n", listaProdutos[i].nome,
                listaProdutos[i].quantidade, listaProdutos[i].total);
     }
 
